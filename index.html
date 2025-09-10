@@ -7,20 +7,24 @@
   .inline-element {
     display: inline-block;
   }
+
+  
 </style>
+<link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
     <tr>
-      <td align="center"><p><a href="index.html">Geoffrey Sarmiento</a></p></td>
-
+      <td align="center" class = "site-title" ><h1><a href="index.html">Geoffrey Sarmiento</a></h1></td>
     </tr>
-    <td height="60"></td>
+
+
 
     <tr>
-    <td align="center">
+      <td align="center" class="nav">
         <a href="portfolio.html">Portfolio</a> |
         <a href="qualifications.html">Qualifications</a> |
         <a href="services.html">Services</a> |
@@ -28,13 +32,20 @@
       </td>
     </tr>
 
+
+    <tr>
+      <td align="center" class="banner-container">
+        <img src="coding.jpg" class="banner-img">
+      </td>
+    </tr>
+
   </table>
 
   <p style="margin-left:20%; margin-top:5%;" class="inline-element">Temporary Image</p>
 
-  <h1 style="margin-left:40%; margin-top:10%;" class="inline-element">About Me</h1>
+  <h1 style="margin-left:42%; margin-top:5%;" class="inline-element">About Me</h1>
 
-  <p style="max-width:600px; margin:auto; margin-top:20px; margin-right:10%; font-size:20px;">
+  <p style="max-width:600px; margin:auto; margin-top:20px; margin-right:15%; font-size:20px;">
     Hello! My name is Geoffrey Sarmiento and I am a Junior Computer Enginering major. My interests in computer science gear more toward using software to get physical results.
     Things like using software to program the controls of a machine or the function of an embedded system. The idea of using digital data and getting real world results 
     is very exciting to me. Coding is an enjoyable experience as it is, but having a pay off to the coding that you can physically see is a different feeling
@@ -52,33 +63,131 @@
     of my website in order to get to know me even more! Sections of my website are accessible through the navigation bar and by scrolling down this page.
   </p>
 
-  <img src="Dog.jpg" style="margin-left:10%; margin-top:-700px; width:500; height:500;"> 
+  <img src="Dog.jpg" style="margin-left:15%; margin-top:-700px; width:500; height:500;"> 
 
-  <br><br>
+  <hr style="margin-top: 2.5%";>
 
-  <div style="text-align: center; margin-top:25%;">
-    <a href="portfolio.html">Portfolio</a>
+
+  <div style="text-align: center;">
+    <h1>Portfolio</h1>
     <p>Check out my portfolio!</p>
-  </div>
 
-  <div style="text-align: center; margin-top:25%;">
-    <a href="qualifications.html">Qualifications</a>
+    <div style="position: relative; display: inline-block;">
+
+      <img src="arrow.webp" alt="Arrow pointing to portfolio"
+          style="
+            position: absolute;
+            top: 25px;      /* Move arrow above briefcase */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+          ">
+
+
+      <a href="portfolio.html">
+        <img src="briefcase.png" style = "margin-top:15%" alt="Portfolio" width="400" height="400">
+      </a>
+    </div>
+  </div>
+  
+  <hr>
+
+  <div style="text-align: center;">
+
+    <h1>Qualifications</h1>
     <p>Here are some of my qualifications!</p>
+
+    <div style="position: relative; display: inline-block;">
+
+      <img src="arrow.webp" alt="Arrow pointing to portfolio"
+          style="
+            position: absolute;
+            top: 25px;      /* Move arrow above briefcase */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+          ">
+
+
+      <a href="qualifications.html">
+        <img src="quals.png" style = "margin-top:25%" alt="Portfolio" width="400" height="400">
+      </a>
+
+    </div>
+
   </div>
 
-  <div style="text-align: center; margin-top:25%;">
-    <a href="services.html">Services</a>
-    <p>Texas A&M Computing Society</p>
-    <p style="margin-top:20%;">Texas A&M Cybersecurity Club</p>
-    <p style="margin-top:20%;">Academic Help</p>
+  <hr>
+
+  <div style="text-align: center;">
+    <h1>Services</h1>
+    <p>Find out what I do to give back!</p>
+
+    <div style="position: relative; display: inline-block;">
+
+      <img src="arrow.webp" alt="Arrow pointing to portfolio"
+          style="
+            position: absolute;
+            top: 25px;      /* Move arrow above briefcase */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+          ">
+
+
+      <a href="qualifications.html">
+        <img src="services.jpg" style = "margin-top:25%" alt="Portfolio" width="400" height="400">
+      </a>
+
+    </div>
+
   </div>
 
-  <div style="text-align: center; margin-top:25%;">
-    <a href="genai.html">GenAI</a>
+  <hr>
+
+  <div style="text-align: center;">
+    <h1>GenAI</h1>
     <p>Generative Artificial Intelligence is extremely powerful. Check out this page it created.</p>
+    <div style="position: relative; display: inline-block;">
+
+      <img src="arrow.webp" alt="Arrow pointing to portfolio"
+          style="
+            position: absolute;
+            top: 25px;      /* Move arrow above briefcase */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+          ">
+
+
+      <a href="genai.html">
+        <img src="ai.webp" style = "margin-top:5%" alt="Portfolio" width="400" height="400">
+      </a>
+
+    </div>
+
   </div>
 
-  <div style="height:400px;"></div>
+  <body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+    <tr>
+      <td align="center" class = "site-bottom" style = "background-color: #222;"><h1><a href="https://mail.google.com">geoffreysarmiento@tamu.edu</a></h1></td>
+    </tr>
+
+
+
+    <tr>
+      <td align="center" class="nav-bottom" style = "background-color: #222;">
+        <a href="https://www.linkedin.com/l">LinkedIn</a> 
+        <a href="https://github.com/">GitHub</a> 
+        <a href="https://discord.com/">Discord</a> 
+      </td>
+    </tr>
+
+  </table>
+
+
 
 </body>
 
