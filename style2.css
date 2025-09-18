@@ -395,7 +395,7 @@ div.Resume {
   border-collapse: collapse;
   padding: 15px;
   margin: 1% auto;
-  color: white;   /* light.css will flip this */
+  color: white
 }
 
 .genai-hero-header,
@@ -419,7 +419,7 @@ div.Resume {
   background: #333;
   padding: 10px;
   border: 1px solid #666;
-  color: #0f0; /* sample */
+  color: #0f0; 
   display: block;
 }
 
@@ -428,6 +428,6 @@ div.Resume {
 .genai-page a:visited,
 .genai-page a:hover,
 .genai-page a:active {
-  color: blue;       /* keeps the same color (no purple) */
-  text-decoration: none; /* optional */
+  color: blue;       
+  text-decoration: none; 
 }

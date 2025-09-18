@@ -284,7 +284,7 @@ h1 {
   border-collapse: collapse;
   padding: 15px;
   margin: 1% auto;
-  color: black;   /* light.css will flip this */
+  color: black;  
 }
 
 .genai-hero-header,
@@ -308,7 +308,7 @@ h1 {
   background: white;
   padding: 10px;
   border: 1px solid white;
-  color: #222; /* sample */
+  color: #222;
   display: block;
 }
 
@@ -317,6 +317,6 @@ h1 {
 .genai-page a:visited,
 .genai-page a:hover,
 .genai-page a:active {
-  color: blue;       /* keeps the same color (no purple) */
-  text-decoration: none; /* optional */
+  color: blue;      
+  text-decoration: none; 
 }
