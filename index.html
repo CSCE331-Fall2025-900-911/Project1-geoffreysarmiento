@@ -10,11 +10,15 @@
 
   
 </style>
-<link rel="stylesheet" href="style.css">
+<link id="theme-style" rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
+
+  <button class="red-btn" onclick="toggleStyle()">Style</button>
+
+
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
     <tr>
@@ -41,9 +45,9 @@
 
   </table>
 
-  <h1 style="margin-left:64%; margin-top:5%;" class="inline-element">About Me</h1>
+  <h1 class="about-me-header">About Me</h1>
 
-  <p style="max-width:600px; margin:auto; margin-top:20px; margin-right:10%; font-size:20px;">
+  <p class = "about-me">
     Hello! My name is Geoffrey Sarmiento and I am a Junior Computer Enginering major. My interests in computer science gear more toward using software to get physical results.
     Things like using software to program the controls of a machine or the function of an embedded system. The idea of using digital data and getting real world results 
     is very exciting to me. Coding is an enjoyable experience as it is, but having a pay off to the coding that you can physically see is a different feeling
@@ -61,34 +65,34 @@
     of my website in order to get to know me even more! Sections of my website are accessible through the navigation bar and by scrolling down this page.
   </p>
 
-  <img src="me.jpg" style="margin-left:10%; margin-top:-700px; width:500; height:auto;"> 
+  <img src="me.jpg" class = "meimg"> 
 
-  <hr style="margin-top: 2.5%";>
+  <div class="line-container">
+    <div class="vertical"></div>
+    <div class="horizontal h1"></div>
+    <div class="horizontal h2"></div>
+    <div class="horizontal h3"></div>
+  </div>
+
+  <hr class="horizontal-line-first">
 
 
-  <div class = "site-section">
+  <div class = "site-section-first">
     <h1>Portfolio</h1>
     <p>Check out my portfolio!</p>
 
     <div style="position: relative; display: inline-block;">
 
-      <img src="arrow.webp" alt="Arrow pointing to portfolio"
-          style="
-            position: absolute;
-            top: 25px;      /* Move arrow above briefcase */
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-          ">
+      <img src="arrow.webp" class = "arrow-img">
 
 
       <a href="portfolio.html">
-        <img src="briefcase.png" style = "margin-top:15%" alt="Portfolio" width="400" height="400">
+        <img src="briefcase.png" class="index-images-briefcase" alt="Portfolio">
       </a>
     </div>
   </div>
   
-  <hr>
+  <hr class="horizontal-line">
 
   <div class = "site-section">
 
@@ -97,95 +101,79 @@
 
     <div style="position: relative; display: inline-block;">
 
-      <img src="arrow.webp" alt="Arrow pointing to portfolio"
-          style="
-            position: absolute;
-            top: 25px;      /* Move arrow above briefcase */
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-          ">
+      <img src="arrow.webp" class = "arrow-img">
 
 
       <a href="qualifications.html">
-        <img src="quals.png" style = "margin-top:25%" alt="Portfolio" width="400" height="400">
+        <img src="quals.png" class="index-images" alt="Portfolio">
       </a>
 
     </div>
 
   </div>
 
-  <hr>
+  <hr class="horizontal-line">
 
-  <div class = "site-section">
+  <div class = "site-section-serv">
     <h1>Services</h1>
     <p>Find out what I do to give back!</p>
 
     <div style="position: relative; display: inline-block;">
 
-      <img src="arrow.webp" alt="Arrow pointing to portfolio"
-          style="
-            position: absolute;
-            top: 25px;      /* Move arrow above briefcase */
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-          ">
+      <img src="arrow.webp" class = "arrow-img">
 
 
-      <a href="qualifications.html">
-        <img src="services.jpg" style = "margin-top:25%" alt="Portfolio" width="400" height="400">
+      <a href="services.html">
+        <img src="services.jpg" class="index-images-serv" alt="Portfolio">
       </a>
 
     </div>
 
   </div>
 
-  <hr>
+  <hr class="horizontal-line">
 
-  <div style="text-align: center;">
+  <div class="site-section-genai">
     <h1>GenAI</h1>
     <p>Generative Artificial Intelligence is extremely powerful. Check out this page it created.</p>
     <div style="position: relative; display: inline-block;">
 
-      <img src="arrow.webp" alt="Arrow pointing to portfolio"
-          style="
-            position: absolute;
-            top: 25px;      /* Move arrow above briefcase */
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-          ">
+      <img src="arrow.webp" class = "arrow-img">
 
 
       <a href="genai.html">
-        <img src="ai.webp" style = "margin-top:5%" alt="Portfolio" width="400" height="400">
+        <img src="ai.webp" class="index-images-ai" alt="Portfolio">
       </a>
 
     </div>
 
   </div>
+
+
+  <div class="empty-space"></div>
 
   <body>
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
     <tr>
-      <td align="center" class = "site-bottom" style = "background-color: #222;"><h1><a href="https://mail.google.com">geoffreysarmiento@tamu.edu</a></h1></td>
+      <td align="center" class = "site-bottom"><h1><a href="https://mail.google.com">geoffreysarmiento@tamu.edu</a></h1></td>
     </tr>
 
 
 
     <tr>
-      <td align="center" class="nav-bottom" style = "background-color: #222;">
-        <a href="https://www.linkedin.com/l">LinkedIn</a> 
+      <td align="center" class="nav-bottom">
+        <a href="https://www.linkedin.com/">LinkedIn</a> 
         <a href="https://github.com/">GitHub</a> 
         <a href="https://discord.com/">Discord</a> 
+        <a href="https://facebook.com/">Facebook</a>
+        <a href="https://Twitter.com/">Twitter</a>
       </td>
     </tr>
 
   </table>
 
-
+  <script src="style.js"></script>
 
 </body>
 

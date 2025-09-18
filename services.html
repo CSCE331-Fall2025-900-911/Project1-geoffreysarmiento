@@ -3,10 +3,13 @@
 <head>
     <title>Geoffrey Sarmiento</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <link rel="stylesheet" href="style.css">
+    <link id="theme-style" rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <button class="red-btn" onclick="toggleStyle()">Style</button>
+
 
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
@@ -33,9 +36,11 @@
 
   </table>
 
-    <h1 style="text-align: center; margin-top: 2%;">Services</h1>
+    <h1 class="site-header">Services</h1>
+
+    <div class="site-section-services-container">
     
-    <div class="site-section" style="margin-top: 3%;">
+    <div class="site-section-services" style="margin-top: 3%;">
     <h1>Texas A&M Computing Society</h1>
     <p>
       The Texas A&M Computing Society aims to build a community for those interested in computing and the field of computer science.
@@ -45,7 +50,7 @@
     </p>
     </div>
 
-    <div class="site-section" style="margin-top: 3%;">
+    <div class="site-section-services" style="margin-top: 3%;">
       <h1>Texas A&M Cybersecurity Club</h1>
       <p>
         The Texas A&M Cybersecurity Club educates students from all backgrounds in the field of cybersecurity. They give back to the community through their 
@@ -54,12 +59,14 @@
       </p>
     </div>
 
-    <div class="site-section" style="margin-top: 3%;">
+    <div class="site-section-services" style="margin-top: 3%;">
       <h1>Academic Help</h1>
       <p>
         Helping students with learning topics in various topics such as mathematics, physics, and computer science. I also help with application/resume tips 
         for my peers and do my best to help with application of learning to real world problems.
       </p>
+    </div>
+
     </div>
 
 
@@ -80,7 +87,7 @@
     </tr>
 
   </table>
-
+<script src="style.js"></script>
 </body>
 
 </html>

@@ -3,10 +3,12 @@
 <head>
   <title>Generative AI — Concepts, Capabilities & Considerations</title>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" href="style.css">
+  <link id="theme-style" rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <button class="red-btn" onclick="toggleStyle()">Style</button>
+
   <!-- Header / Nav -->
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
@@ -24,163 +26,176 @@
     </tr>
     <tr>
       <td align="center" class="banner-container">
-        <img src="coding.jpg" class="banner-img">
-      </td>
-    </tr>
-
-  </table>
-
-
-  <!-- Hero -->
-  <table width="80%" border="1" cellspacing="0" cellpadding="15" align="center" style="border-collapse:collapse; margin-top: 1%;">
-    <tr>
-      <td align="center" bgcolor="#f2f2f2">
-        <h1>Create with Generative AI</h1>
-        <p>Generative AI (GenAI) turns plain language into outputs—text, images, code, audio, even video. This page explains what it is, how it works, and how to use it responsibly.</p>
-        <p>Prompts used: Create an ai generated page for my website. It can be about the concept of gen ai. Do it in html. Can you take this and keep the same general format, but make it adhere to my current style (with my code provided to the AI).</p>
+        <img src="coding.jpg" class="banner-img" alt="Coding Banner">
       </td>
     </tr>
   </table>
 
-  <!-- What is GenAI -->
-  <br>
-  <table width="80%" border="1" cellspacing="0" cellpadding="15" align="center" style="border-collapse:collapse;">
-    <tr>
-      <td colspan="2" align="center" bgcolor="#f2f2f2"><h2>What is Generative AI?</h2></td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top">
-        <p>Generative AI refers to models that <em>generate</em> new content after learning patterns from vast datasets.</p>
-        <ul>
-          <li><b>Language models (LLMs):</b> predict the next token to produce coherent text and code.</li>
-          <li><b>Diffusion models:</b> iteratively denoise random pixels to create images from prompts.</li>
-          <li><b>Audio & speech models:</b> synthesize natural-sounding voices and music.</li>
-        </ul>
-      </td>
-      <td width="50%" valign="top">
-        <h3>Why it matters</h3>
-        <p>GenAI accelerates ideation, automates routine work, and augments creativity. Teams ship faster while focusing on higher-value decisions.</p>
-        <p><b>Key benefits:</b> ⚡ Speed • 📈 Scale • 🎯 Personalization • 🎨 Creativity</p>
-      </td>
-    </tr>
-  </table>
+<!-- Hero -->
+<table class="genai-hero" align="center">
+  <tr>
+    <td align="center" class="genai-hero-header">
+      <h1>Create with Generative AI</h1>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" class="genai-hero-text">
+      <p>Generative AI (GenAI) turns plain language into outputs—text, images, code, audio, even video. This page explains what it is, how it works, and how to use it responsibly.</p>
+      <p>Prompts used: Create an ai generated page for my website. It can be about the concept of gen ai. Do it in html. Can you take this and keep the same general format, but make it adhere to my current style (with my code provided to the AI).</p>
+    </td>
+  </tr>
+</table>
 
-  <!-- How it works -->
-  <br>
-  <table width="80%" border="1" cellspacing="0" cellpadding="15" align="center" style="border-collapse:collapse;">
-    <tr>
-      <td colspan="2" align="center" bgcolor="#f2f2f2"><h2>How it Works</h2></td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top">
-        <ol>
-          <li><b>Pre-training:</b> learn general features from massive datasets.</li>
-          <li><b>Fine-tuning:</b> specialize on tasks or domains.</li>
-          <li><b>Inference:</b> generate responses conditioned on your prompt.</li>
-        </ol>
-        <pre style="background:#eee; padding:10px; border:1px solid #ccc;">
+<!-- What is GenAI -->
+<table class="genai-section" align="center">
+  <tr>
+    <td colspan="2" align="center" class="genai-section-header"><h2>What is Generative AI?</h2></td>
+  </tr>
+  <tr>
+    <td class="genai-section-left">
+      <p>Generative AI refers to models that <em>generate</em> new content after learning patterns from vast datasets.</p>
+      <ul>
+        <li><b>Language models (LLMs):</b> predict the next token to produce coherent text and code.</li>
+        <li><b>Diffusion models:</b> iteratively denoise random pixels to create images from prompts.</li>
+        <li><b>Audio & speech models:</b> synthesize natural-sounding voices and music.</li>
+      </ul>
+    </td>
+    <td class="genai-section-right">
+      <h3>Why it matters</h3>
+      <p>GenAI accelerates ideation, automates routine work, and augments creativity. Teams ship faster while focusing on higher-value decisions.</p>
+      <p><b>Key benefits:</b> ⚡ Speed • 📈 Scale • 🎯 Personalization • 🎨 Creativity</p>
+    </td>
+  </tr>
+</table>
+
+<!-- How it works -->
+<table class="genai-section" align="center">
+  <tr>
+    <td colspan="2" align="center" class="genai-section-header"><h2>How it Works</h2></td>
+  </tr>
+  <tr>
+    <td class="genai-section-left">
+      <ol>
+        <li><b>Pre-training:</b> learn general features from massive datasets.</li>
+        <li><b>Fine-tuning:</b> specialize on tasks or domains.</li>
+        <li><b>Inference:</b> generate responses conditioned on your prompt.</li>
+      </ol>
+      <pre class="genai-code">
 response = model.generate(
   prompt,
   temperature=0.7,
   top_p=0.9,
   max_tokens=400
 )</pre>
-      </td>
-      <td width="50%" valign="top">
-        <h3>Prompting guidelines</h3>
-        <ul>
-          <li>State the goal and constraints up front.</li>
-          <li>Provide examples for style or format.</li>
-          <li>Ask for structure (tables, steps, JSON).</li>
-          <li>Iterate: refine with follow-ups.</li>
-        </ul>
-      </td>
-    </tr>
-  </table>
+    </td>
+    <td class="genai-section-right">
+      <h3>Prompting guidelines</h3>
+      <ul>
+        <li>State the goal and constraints up front.</li>
+        <li>Provide examples for style or format.</li>
+        <li>Ask for structure (tables, steps, JSON).</li>
+        <li>Iterate: refine with follow-ups.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-  <!-- Use cases -->
-  <br>
-  <table width="80%" border="1" cellspacing="0" cellpadding="15" align="center" style="border-collapse:collapse;">
-    <tr>
-      <td colspan="3" align="center" bgcolor="#f2f2f2"><h2>Use Cases</h2></td>
-    </tr>
-    <tr>
-      <td valign="top"><b>Content & Marketing</b><br>Draft blogs, emails, product descriptions.</td>
-      <td valign="top"><b>Engineering</b><br>Explain code, write tests, accelerate refactoring.</td>
-      <td valign="top"><b>Creative</b><br>Storyboard visuals, branding concepts, audio cues.</td>
-    </tr>
-    <tr>
-      <td valign="top"><b>Product & UX</b><br>Generate user stories, microcopy, onboarding guides.</td>
-      <td valign="top"><b>Data & Analytics</b><br>Summarize dashboards, generate SQL, NL interfaces.</td>
-      <td valign="top"><b>Customer Support</b><br>Auto-draft replies, categorize tickets, assistants.</td>
-    </tr>
-  </table>
+<!-- Use cases -->
+<table class="genai-section" align="center">
+  <tr>
+    <td colspan="3" align="center" class="genai-section-header"><h2>Use Cases</h2></td>
+  </tr>
+  <tr>
+    <td class="genai-card"><b>Content & Marketing</b><br>Draft blogs, emails, product descriptions.</td>
+    <td class="genai-card"><b>Engineering</b><br>Explain code, write tests, accelerate refactoring.</td>
+    <td class="genai-card"><b>Creative</b><br>Storyboard visuals, branding concepts, audio cues.</td>
+  </tr>
+  <tr>
+    <td class="genai-card"><b>Product & UX</b><br>Generate user stories, microcopy, onboarding guides.</td>
+    <td class="genai-card"><b>Data & Analytics</b><br>Summarize dashboards, generate SQL, NL interfaces.</td>
+    <td class="genai-card"><b>Customer Support</b><br>Auto-draft replies, categorize tickets, assistants.</td>
+  </tr>
+</table>
 
-  <!-- Responsible AI -->
-  <br>
-  <table width="80%" border="1" cellspacing="0" cellpadding="15" align="center" style="border-collapse:collapse;">
-    <tr>
-      <td colspan="2" align="center" bgcolor="#f2f2f2"><h2>Responsible AI</h2></td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top">
-        <h3>Principles</h3>
-        <ul>
-          <li><b>Transparency:</b> disclose when content is AI-assisted.</li>
-          <li><b>Privacy:</b> minimize personal data; obtain consent.</li>
-          <li><b>Safety:</b> avoid harmful outputs; use guardrails.</li>
-          <li><b>Accountability:</b> keep a human in the loop.</li>
-          <li><b>Attribution:</b> respect IP and cite sources.</li>
-        </ul>
-      </td>
-      <td width="50%" valign="top">
-        <h3>Evaluation checklist</h3>
-        <ul>
-          <li>Clear user value and success metrics.</li>
-          <li>Mitigations for bias, toxicity, hallucinations.</li>
-          <li>Security reviews for prompt injection.</li>
-          <li>Fallbacks and safe-failure behaviors.</li>
-        </ul>
-      </td>
-    </tr>
-  </table>
+<!-- Responsible AI -->
+<table class="genai-section" align="center">
+  <tr>
+    <td colspan="2" align="center" class="genai-section-header"><h2>Responsible AI</h2></td>
+  </tr>
+  <tr>
+    <td class="genai-section-left">
+      <h3>Principles</h3>
+      <ul>
+        <li><b>Transparency:</b> disclose when content is AI-assisted.</li>
+        <li><b>Privacy:</b> minimize personal data; obtain consent.</li>
+        <li><b>Safety:</b> avoid harmful outputs; use guardrails.</li>
+        <li><b>Accountability:</b> keep a human in the loop.</li>
+        <li><b>Attribution:</b> respect IP and cite sources.</li>
+      </ul>
+    </td>
+    <td class="genai-section-right">
+      <h3>Evaluation checklist</h3>
+      <ul>
+        <li>Clear user value and success metrics.</li>
+        <li>Mitigations for bias, toxicity, hallucinations.</li>
+        <li>Security reviews for prompt injection.</li>
+        <li>Fallbacks and safe-failure behaviors.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-  <!-- FAQs -->
-  <br>
+<!-- FAQs -->
+<table class="genai-section" align="center">
+  <tr><td align="center" class="genai-section-header"><h2>FAQs</h2></td></tr>
+  <tr><td class="genai-faq"><b>Is GenAI a replacement for humans?</b><br>No. It augments human work by handling repetitive tasks and accelerating exploration.</td></tr>
+  <tr><td class="genai-faq"><b>What data does an AI model use?</b><br>Models learn from large datasets during training. Provide only data you’re comfortable sharing.</td></tr>
+  <tr><td class="genai-faq"><b>How do I get reliable outputs?</b><br>Be specific about goals, provide examples, and review outputs critically.</td></tr>
+</table>
+
+<div class="genai-page">
+
+  <!-- Explore AI Models -->
   <table width="70%" border="1" cellspacing="0" cellpadding="15" align="center" style="border-collapse:collapse;">
-    <tr><td align="center" bgcolor="#f2f2f2"><h2>FAQs</h2></td></tr>
-    <tr><td><b>Is GenAI a replacement for humans?</b><br>No. It augments human work by handling repetitive tasks and accelerating exploration.</td></tr>
-    <tr><td><b>What data does an AI model use?</b><br>Models learn from large datasets during training. Provide only data you’re comfortable sharing.</td></tr>
-    <tr><td><b>How do I get reliable outputs?</b><br>Be specific about goals, provide examples, and review outputs critically.</td></tr>
+    <tr><td align="center" class="genai-section-header"><h2>Explore AI Models</h2></td></tr>
+    <tr><td align="center">
+      <a href="https://openai.com/gpt" target="_blank">GPT (OpenAI)</a> |
+      <a href="https://huggingface.co/models" target="_blank">Hugging Face Models</a> |
+      <a href="https://stability.ai/" target="_blank">Stable Diffusion</a> |
+      <a href="https://deepmind.google/technologies/gemini/" target="_blank">Gemini (DeepMind)</a>
+    </td></tr>
   </table>
 
-  <!-- CTA -->
-  <br>
-  <table width="80%" border="1" cellspacing="0" cellpadding="15" align="center" style="border-collapse:collapse;">
-    <tr>
-      <td align="center" bgcolor="#f2f2f2">
-        <h2>Ready to explore GenAI for your team?</h2>
-        <p>Start with a small pilot, define success metrics, and iterate.</p>
-        <a href="#contact"><img src="ai.webp" alt="AI Icon" width="200"></a>
-      </td>
-    </tr>
-  </table>
+</div>
+
+<!-- CTA -->
+<table class="genai-section" align="center">
+  <tr>
+    <td align="center" class="genai-section-header">
+      <h2>Ready to explore GenAI for your team?</h2>
+      <p>Start with a small pilot, define success metrics, and iterate.</p>
+      <a href="#contact"><img src="ai2.png" alt="AI Icon" width="200"></a>
+    </td>
+  </tr>
+</table>
+
 
   <!-- Footer -->
   <br>
   <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 3%;">
     <tr>
-      <td align="center" class="site-bottom" style="background-color:#222;">
-        <h3><a href="mailto:geoffreysarmiento@tamu.edu" style="color:#fff;">geoffreysarmiento@tamu.edu</a></h3>
+      <td align="center" class="site-bottom">
+        <h3><a href="mailto:geoffreysarmiento@tamu.edu">geoffreysarmiento@tamu.edu</a></h3>
       </td>
     </tr>
     <tr>
-      <td align="center" class="nav-bottom" style="background-color:#222; color:#fff;">
-        <a href="https://www.linkedin.com/" style="color:#fff;">LinkedIn</a> |
-        <a href="https://github.com/" style="color:#fff;">GitHub</a> |
-        <a href="https://discord.com/" style="color:#fff;">Discord</a>
+      <td align="center" class="nav-bottom" style="color:white">
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/" target="_blank">GitHub</a> |
+        <a href="https://discord.com/" target="_blank">Discord</a>
       </td>
     </tr>
   </table>
+  <script src="style.js"></script>
 </body>
 </html>
